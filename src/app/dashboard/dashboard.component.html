@@ -1,7 +1,10 @@
-<h1>Dashboard</h1>
+<h2>My Sample Dashboard</h2>
 
-<gridster [options]="options">
+<gridster [options]="options" class="bg-white">
   <gridster-item [item]="item" *ngFor="let item of dashboard">
-    Hi was geht
+    <ndc-dynamic
+      [ndcDynamicComponent]="item.component"
+      [ndcDynamicInputs]="item.inputs"
+    ></ndc-dynamic>
   </gridster-item>
 </gridster>

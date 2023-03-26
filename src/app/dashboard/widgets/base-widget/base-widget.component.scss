@@ -1,0 +1,17 @@
+$widget-title-size: 1.75rem;
+$widget-gap: 0.75rem;
+
+.widget-container {
+    height: 100%;
+}
+
+.widget-title {
+    margin: $widget-gap;
+    font-size: $widget-title-size;
+    font-weight: 400;
+}
+
+.widget-content {
+    height: calc(100% - 3*$widget-gap - $widget-title-size);
+    margin-bottom: $widget-gap;
+}
